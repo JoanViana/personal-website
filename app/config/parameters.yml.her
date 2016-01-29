@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+#DATABASE_URL='postgres://wfwzwqjbexvruz:HHMfW5xa-aI5ShO7QiY6YXScXP@ec2-54-225-197-143.compute-1.amazonaws.com:5432/dckvt2jlu4rp1i'
+parameters:
+    database_host: ec2-54-225-197-143.compute-1.amazonaws.com
+    database_port: 5432
+    database_name: dckvt2jlu4rp1i
+    database_user: wfwzwqjbexvruz
+    database_password: HHMfW5xa-aI5ShO7QiY6YXScXP
+    
+    mailer_transport: smtp
+    mailer_host: smtp.gmail.com
+    mailer_user: joanviana.webmail@gmail.com
+    mailer_password: U235Pu239
+    secret: 34d14ae6a14af81c53b90dcb3d2c6b278a0beb01

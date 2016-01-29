@@ -1,0 +1,65 @@
+{# src/JV/ContactBundle/Resources/views/confirmation.html.twig #}
+{% extends "layout.html.twig" %}
+{% block confirm %}
+    <section>
+       <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Success!</strong> Feedback sended. I will respond as soon as possible.
+        </div>
+    </section>
+{% endblock %}
+
+{% block contact %}
+
+
+
+<a name="contact_"></a>
+
+<section class="section" id="contact_">
+	
+{#
+{% if app.session.hasFlash('blogger-notice') %}
+	    <div class="blogger-notice">
+	        {{ app.session.flash('blogger-notice') }}
+	    </div>
+	{% endif %}
+	#}
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+
+        <h2 class="text-center title">Contact</h2>
+        <div class="form-style">
+    
+{#      <form action="{{ path('jv_contact_index') }}" method="post" {{ form_enctype(form) }} class="form">#}
+{#         {{ form_errors(form) }}#}
+
+{#         {{ form_row(form.firstName) }}#}
+{#         {{ form_row(form.lastName) }}#}
+{#         {{ form_row(form.email) }}#}
+{#         {{ form_row(form.subject) }}#}
+{#         {{ form_row(form.body) }}#}
+
+{#         {{ form_rest(form) }}#}
+        
+{#     </form>#}
+
+{{ form_start(form, {'action': path('jv_contact_index')}) }}
+		        
+		        <fieldset>
+		             
+		            {{ form_widget(form) }}
+		        </fieldset> 
+		        
+    
+    		  </div>
+	</div>
+	</div>
+	<div class="col-xs-12">
+        <hr class="space"/>
+        <p align="center">© 2015 Joan Dídac Viana Fons</p>
+    </div>
+</section>
+    
+{% endblock %}

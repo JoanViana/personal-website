@@ -1,0 +1,27 @@
+jv_contact_index:
+    path:     /index
+    defaults: { _controller: JVPersonalWebsiteBundle:Contact:contact }
+    requirements:
+        _method:  GET|POST
+
+jv_contact_confirmation:
+    path:     /confirmation
+    defaults: { _controller: JVPersonalWebsiteBundle:Contact:contact }
+    requirements:
+        _method:  GET|POST
+        
+jv_contact_error:
+    path:     /error
+    defaults: { _controller: JVPersonalWebsiteBundle:Contact:contact }
+    requirements:
+        _method:  GET|POST
+        
+jv_redirect_root:
+    path: /
+    defaults:
+        _controller: JVPersonalWebsiteBundle:Contact:contact
+        path: /index
+        permanent: true
+    requirements:
+        _method:  GET|POST
+        
