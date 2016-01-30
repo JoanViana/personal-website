@@ -61,7 +61,7 @@ class ContactController extends Controller
 
         if ($form->isValid()) {
 
-            
+                /*
                 $message = \Swift_Message::newInstance()
                     ->setSubject('Contact feedback from joanviana.hol.es')
                     ->setFrom('joanviana.webmail@gmail.com')
@@ -69,6 +69,7 @@ class ContactController extends Controller
                     ->setBody($this->renderView('JVPersonalWebsiteBundle::contactEmail.txt.twig', 
                     array('enquiry' => $enquiry)));
                 $this->get('mailer')->send($message);
+                */
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($enquiry);
                 $em->flush();
