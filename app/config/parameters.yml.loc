@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: c9-PersonalWebsite
+    database_user: joanviana
+    database_password: root
+    mailer_transport: smtp
+    mailer_host: smtp.gmail.com
+    mailer_user: joanviana.webmail@gmail.com
+    mailer_password: U235Pu239
+    secret: 34d14ae6a14af81c53b90dcb3d2c6b278a0beb01
