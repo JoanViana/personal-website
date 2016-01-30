@@ -552,6 +552,23 @@ blockquote {
     font-size: 6em;
 }
 
+.reduce { 
+    -webkit-transition: all 0.35s ease-in-out ;
+    -moz-transition: all 0.35s ease-in-out ;
+    -ms-transition: all 0.35s ease-in-out ;
+    -o-transition: all 0.35s ease-in-out ;
+    transition: all 0.35s ease-in-out ;
+
+}
+
+.reduce:hover { 
+    -webkit-transform: scale(0.85) !important ;
+    -moz-transform: scale(0.85) !important ;
+    -ms-transform: scale(0.85) !important ;
+    -o-transform: scale(0.85)  !important ;
+    transform: scale(0.85)  !important ;
+}
+
 .form-style{
     font-size: 2em !important;
     font-family: 'Wire One', Helvetica, Arial, sans-serif !important;
@@ -560,24 +577,25 @@ blockquote {
 }
 
 .form-style button{
-    background: rgba(0, 0, 0, 0.8) !important;
-    border: 2px solid #fff !important;
+    background: rgba(0,0,0,1) !important;
+    color: rgba(255,255,255,1) !important;
+    
+    border: 2px solid rgba(0,0,0,0.8) !important;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
-    color: #fff;
     font-weight:800;
-    padding: 0.5em;
-    /*position: absolute;
-    right: 5%;*/
+    padding: 0.2em;
+    margin:0;
+    margin-bottom: 2em;
+    z-index:99;
+    font-size:1em;
     
 }
 
 .form-style button:hover{
-    background: rgba(0, 0, 0, 0.4) !important;
+    background: rgba(255,255,255, 0.95) !important;
+    color: rgba(0,0,0,1) !important;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.085) inset;
-    font-weight:bold;
-    
-    
 }
 
 .form-style input, .form-style textarea{
@@ -594,3 +612,17 @@ blockquote {
     /*margin-left: 1em;*/
     padding: 0.2em;
 }
+
+li .nav-link:active{
+    background-color: #000;
+    color: #fff;
+}
+
+.theme-invert .title-post a{
+    color: rgba(0,0,0,.8) !important;
+}
+
+.theme-invert .title-post a:hover{
+    color: rgba(0,0,0,1) !important;
+}
+

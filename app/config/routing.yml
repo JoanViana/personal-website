@@ -13,8 +13,8 @@ app:
     #requirements:
     #    _locale: '%app.locales%'
 
-fos_user:
-    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+#fos_user:
+    #resource: "@FOSUserBundle/Resources/config/routing/all.xml"
     #prefix : /{_locale}/ 
     #requirements:
     #    _locale: '%app.locales%'

@@ -26,7 +26,7 @@ class Contact
      * @var string
      *
      * @ORM\Column(name="first_name", type="string", length=50)
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(message="Cannot be blank")
      */
     private $firstName;
 
@@ -34,7 +34,7 @@ class Contact
      * @var string
      *
      * @ORM\Column(name="last_name", type="string", length=100)
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(message="Cannot be blank")
      */
     private $lastName;
 
@@ -42,8 +42,8 @@ class Contact
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=100)
-     * @Assert\NotBlank()
-     * @Assert\Email()
+     * @Assert\NotBlank(message="Cannot be blank")
+     * @Assert\Email(message = "Enter a valid Email")
      */
     private $email;
 
@@ -51,7 +51,7 @@ class Contact
      * @var string
      *
      * @ORM\Column(name="subject", type="string", length=20)
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(message="Cannot be blank")
      */
     private $subject;
 
@@ -59,7 +59,7 @@ class Contact
      * @var string
      *
      * @ORM\Column(name="body", type="string", length=500)
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(message="Cannot be blank")
      */
     private $body;
 
